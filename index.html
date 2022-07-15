@@ -1,16 +1,28 @@
+<!DOCTYPE html>
 <html>
     <head>
-    <script src="script.js"></script>
-    <link rel="stylesheet" href="style.css">
+        <title>simple interest calculator</title>
+        <script src="script.js" type="application/javascript"></script>
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <h1>Simple Interest Calculator</h1>
-
-        Amount <input type="number"  id="principal">  <br/>
-        Rate <input type="number"  id="rate">  <br/>
-        No. of Years <input type="number"  id="years">  <br/>
-        Interest : <span id="result"></span><br>
-
-        <button onclick="compute()">Compute</button>
+        <div class="mainDiv">
+            <form action="">
+                <h1>Simple Interest Calculator</h1>
+                <label for="principal">Amount</label>
+                <input type="text" id="principal" name="principal">  <br/>
+                <label for="rate">Interest Rate</label>
+                <input type="range" onchange="updateTextInput(this.value);" min="1" max="20" step="0.05" id="rate" name="rate" value="10.25">
+                <!-- <span id="rate_val">10.25%</span> -->
+                <input type="text" id="textInput" value="">% <br>
+                <label for="years">No. of Years</label>
+                <select id="years" name="years"></select>
+                <br>
+                <button onclick="compute()">Compute Interest</button><br>
+                <span id="result"></span>
+                
+            </form>
+            <footer>&#169; This Calculator belongs to swan poiZon</footer>
+        </div>
     </body>
 </html>

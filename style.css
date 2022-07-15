@@ -1,4 +1,72 @@
-body {background-color:tan;}
-h1{color:green;}
+body {
+  background-color:black;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+}
 
+ * {
+  border: 1px solid red;
+} 
+/* 
+#result {
+  height: 20px;
+} */
 
+h1 {
+  color:grey;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+}
+
+.mainDiv {
+  margin: 20px auto;
+  width: 300px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 25px;
+  color: black;
+}
+
+label {
+  margin-left: 40px;
+}
+
+input#principal {
+  margin-left: 100px;
+}
+
+input {
+  margin-left: 63px;
+  margin-bottom: 15px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+select {
+  margin-left: 70px;
+  text-align: left;
+  margin-bottom: 15px;
+}
+
+button {
+  margin-left: 35px;
+  background-color: rgb(232, 220, 220);
+  border-radius: 5px;
+  border: 1px solid black;
+}
+
+#textInput {
+  width: 50px;
+  height: 30px;
+  font-size: large;
+  border: none;
+}
+
+#rate {
+  colo
+}
+
+/* input#textInput::after {
+  background-color: yellow;
+  content: "%";
+} */
